@@ -1,0 +1,10 @@
+﻿{
+  "Name": "Chat Redirect",
+  "Author": "DalamudKr",
+  "Description": "Send chat to other client",
+  "RepoUrl": "https://github.com/DalamudKr/chatRedirect",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "Utility"
+  ]
+}
