@@ -30,11 +30,9 @@
   <ItemGroup>
     <PackageReference Include="DalamudPackager" Version="2.1.5" />
     <PackageReference Include="ILRepack" Version="2.1.0-beta1" />
-    <PackageReference Include="XivCommon" Version="4.0.0-alpha.2" />
-    <Reference Include="FFXIVClientStructs">
-      <HintPath>$(DalamudLibPath)FFXIVClientStructs.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
+    <PackageReference Include="TinyIpc" Version="3.1.1" />
+    <PackageReference Include="XivCommon" Version="5.0.1-alpha.1" />
+
     <Reference Include="Newtonsoft.Json">
       <HintPath>$(DalamudLibPath)Newtonsoft.Json.dll</HintPath>
       <Private>false</Private>
@@ -51,12 +49,8 @@
       <HintPath>$(DalamudLibPath)ImGuiScene.dll</HintPath>
       <Private>false</Private>
     </Reference>
-    <Reference Include="Lumina">
-      <HintPath>$(DalamudLibPath)Lumina.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="Lumina.Excel">
-      <HintPath>$(DalamudLibPath)Lumina.Excel.dll</HintPath>
+    <Reference Include="XivCommon">
+      <HintPath>$(DalamudLibPath)XivCommon.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>

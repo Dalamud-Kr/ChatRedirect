@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 using Dalamud.Interface.Windowing;
 using ImGuiNET;
 
@@ -44,9 +40,16 @@ namespace ChatRedirect
             var running = this.plugin.Running;
 
             if (running) ImGui.PushStyleVar(ImGuiStyleVar.Alpha, 0.2f);
-            if (ImGui.Button("Start Client##start_client", new Vector2(-1, 25)) && !running)
+            if (ImGui.Button("Start Sender##start_sender", new Vector2(-1, 25)) && !running)
             {
-                this.plugin.Start();
+                this.plugin.Start(true);
+            }
+            if (running) ImGui.PopStyleVar();
+
+            if (running) ImGui.PushStyleVar(ImGuiStyleVar.Alpha, 0.2f);
+            if (ImGui.Button("Start Receiver##start_Receiver", new Vector2(-1, 25)) && !running)
+            {
+                this.plugin.Start(false);
             }
             if (running) ImGui.PopStyleVar();
 
